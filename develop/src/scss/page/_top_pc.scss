@@ -222,3 +222,266 @@ img {
     }
   }
 }
+.block_05 {
+  padding: 80px 0 0;
+  width: 100%;
+  background: url('../images/bg_building.png') no-repeat;
+  background-position: center bottom 58px;
+  background-size: contain;
+  &.row {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-bottom: 60px;
+    figure {
+      width: 299px;
+      margin: 0 auto;
+    }
+  }
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    p {
+
+    }
+    figure {
+      margin: 0 auto;
+    }
+  }
+  &_price {
+    width: 33%;
+    position: relative;
+    padding: 40px 0 0;
+    p{
+      text-align: center;
+      font-size: 21px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
+    .sns {
+      width: 233px;
+      margin-bottom: 56px;
+    }
+    .price_icon {
+      width: 338px;
+    }
+  }
+  &_smt {
+    width: 33%;
+    position: relative;
+    &:before {
+      content: "";
+      background: url('../images/bee_icon.png')no-repeat;
+      width: 279px;
+      height: 441px;
+      background-size: contain;
+      right: -195px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+    figure {
+      width: 463px;
+    }
+  }
+  &_help {
+    width: 33%;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      background: url('../images/sakura_bg.png') no-repeat;
+      width: 478px;
+      height: 426px;
+      top: -80px;
+      left: -108px;
+      background-size: contain;
+      z-index: -1;
+    }
+    ul {
+      margin-bottom: 27px;
+      padding: 26px 0 0 39px;
+      li {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 27px;
+      padding-left: 39px;
+      em {
+        color: #de3339;
+        font-style: normal;
+
+      }
+    }
+  }
+}
+.block_06 {
+  display: flex;
+  padding: 60px 0;
+  li {
+    width: calc(100% / 4);
+  }
+}
+.block_07 {
+  margin-bottom: 200px;
+  h2 {
+    width: 467px;
+    margin: 0 auto 50px;
+  }
+  dl {
+    display: flex;
+    border-bottom: 1px solid #000;
+    // &:not(last-child) {
+    //   margin-bottom: 30px;
+    // }
+    dt {
+      width: 231px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      border-right: 1px solid #000;
+      padding: 30px 0;
+      font-weight: bold;
+    }
+    dd {
+      width: calc(100% - 231px);
+      padding: 30px 0 30px 40px;
+      font-size: 16px;
+    }
+  }
+  &_inner {
+    display: flex;
+    margin: 80px 0 0;
+    .inner_detail {
+      width: 50%;
+      h4 {
+        width: 374px;
+        height: 59px;
+        font-size: 20px;
+        line-height: 59px;
+        text-align: center;
+        border-radius: 49px;
+        margin: 0 auto;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+      figure {
+        margin: 0 auto 35px;
+        height: 211px;
+      }
+      p {
+        padding: 0 42px 0 112px;
+        font-size: 15px;
+        margin-bottom: 7px;
+        em {
+          font-style: normal;
+        }
+      }
+      &:nth-of-type(1) {
+        h4 {
+          background: #e5e5e5;
+        }
+        figure {
+          width: 411px;
+        }
+        p {
+          em {
+            color: #000;
+            font-weight: bold;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        h4 {
+          background: #e52e27;
+          color: #fff;
+        }
+        figure {
+          width: 132px;
+        }
+        p {
+          em {
+            color: #e52e27;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+.block_08 {
+  h2 {
+    width: 322px;
+    margin: 0 auto 100px;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+      margin-top: -5px;
+    }
+    figure {
+      width: 50%;
+    }
+    .cv_box {
+      width: 50%;
+      background: #f6f6f6;
+      padding-top: 100px;
+      h3 {
+        font-size: 27px;
+        line-height: 40px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 60px;
+      }
+      h4 {
+        font-size: 24px;
+        font-size: 27px;
+        margin-bottom: 35px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 36px;
+      }
+      .btn {
+        background: #ff6586;
+        line-height: 65px;
+        height: 65px;
+        width: 300px;
+        color: #fff;
+        text-align: center;
+        margin: 70px auto 0;
+      }
+      .niimi_info {
+        padding: 0 80px 0 0;
+        h3 {
+          padding: 0 0 30px 69px;
+        }
+        h4 {
+          padding-left: 63px;
+        }
+        p {
+          padding-left: 63px;
+        }
+      }
+      .coffee_info {
+        padding: 0 0 0 80px;
+        h3 {
+          padding: 0 69px 30px 0;
+        }
+        h4 {
+          padding-right: 63px;
+        }
+        p {
+          padding-right: 63px;
+        }
+      }
+    }
+  }
+}
