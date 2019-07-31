@@ -20,6 +20,99 @@ img {
   color: #2c4e87;
 }
 .header {
+  padding: 20px;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h1 {
+    a {
+      font-size: 0;
+      display: block;
+      width: 80px;
+      display: block;
+      transition: all .3s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  nav {
+    display: none;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin: 0 20px;
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 25px;
+          color: #000;
+          transition: all .3s ease-out;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+          a {
+            background: #fff000;
+            border-radius: 13px;
+            text-align: center;
+            padding: 8px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.menu_btn_wrapper {
+  .menu_btn {
+    position: relative;
+    height: 22px;
+    width: 32px;
+    display: block!important;
+    cursor: pointer;
+    &::before, &::after {
+      content: "";
+    }
+    span, &::after, &::before {
+      height: 3px;
+      width: 32px;
+      position: absolute;
+      left: 0;
+      background-color: #222324;
+      transition: all .3s ease;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: 9px;
+      text-indent: -9999px;
+    }
+  }
+  strong {
+    display: block;
+    font-family: "Ubuntu";
+    font-size: 12px;
+    padding-top: 5px;
+    color: #222324;
+  }
+
+}
+.mv {
   &_txt {
     position: absolute;
     top: 30px;
@@ -96,6 +189,20 @@ img {
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .block_03 {
+    &:before {
+      top: -45px !important;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .block_03 {
+    &:before {
+      top: -38px !important;
+    }
+  }
+}
 .block_03 {
   background: #fe678e;
   position: relative;
@@ -103,7 +210,7 @@ img {
   &:before {
     content: "";
     position: absolute;
-    top: -51px;
+    top: -50px;
     right: 0;
     width: 100%;
     height: 150px;
