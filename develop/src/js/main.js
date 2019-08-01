@@ -10,12 +10,20 @@ $('a[href^="#"]').click(function(){
   $('html, body').animate({
     scrollTop: hasttopNew
   }, 500);
+  $(".menu_btn").removeClass("is-active");
+  $('.menu_nav').removeClass('active');
   return false;
 });
 
 //hamburger
-$(".hamburger").click(function() {
-	$(this).toggleClass("open");
+$(".menu_btn").click(function() {
+  if (!$(this).hasClass('is-active')) {
+    $(this).addClass('is-active');
+    $('.menu_nav').addClass('active');
+  } else {
+    $(this).removeClass('is-active');
+    $('.menu_nav').removeClass('active');
+  }
 });
 
 // $(window).on('load scroll', function(){
